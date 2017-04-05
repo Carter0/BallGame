@@ -15,9 +15,6 @@ public class BulletController : MonoBehaviour {
     private float timeAtStart;
 
 
-    //I also need to change my planes to boxes so that collision can work
-
-
     //WakeUp is a constructor
     //I call this function from my TurretController script
     public void WakeUp (Transform start, Transform end) {
@@ -47,7 +44,7 @@ public class BulletController : MonoBehaviour {
     void OnCollisionEnter (Collision other) {
         //print ("collision has occured");
         if (other.gameObject.tag == "Platform") {
-            Destroy (this.gameObject);
+             gameObject.SetActive (false);
         }
     }
 
@@ -55,7 +52,7 @@ public class BulletController : MonoBehaviour {
     void TimeToDestroy () {
         //destroy the bullet if the current time is greater than the time at the creation of the bullet + the time to destroy
         if (Time.time > timeAtStart + timeToDestroy){
-            Destroy (this.gameObject);
+            gameObject.SetActive (false);
         }
     }
 }
