@@ -20,7 +20,6 @@ public class BulletController : MonoBehaviour {
     public void WakeUp (Transform start, Transform end) {
         startMarker = start.position;
         endMarker = end.position;
-        startTime = Time.time;
         journeyLength = Vector3.Distance(startMarker, endMarker);
         distanceVector = (endMarker - startMarker);
         distanceVector.Normalize ();
@@ -33,10 +32,7 @@ public class BulletController : MonoBehaviour {
 
     //Move the bullet towards the player by the normalized vector
     void Update () {
-        float distCovered = (Time.time - startTime) * speed;
-        float fracJourney = distCovered / journeyLength;
         transform.position += distanceVector * speed;
-
         TimeToDestroy ();
     }
 
