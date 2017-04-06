@@ -68,10 +68,10 @@ public class ControlMovement : MonoBehaviour {
          }
      }
  
-    // void OnTriggerExit (Collider player) {
-    //     if(player.gameObject.tag == "Player"){
-    //         player.transform.parent = null;      
-    //     }
-    //  } 
+    void OnTriggerExit (Collider player) {
+        if (player.gameObject.tag == "Player") {
+            player.transform.parent = null;      
+        }
+     } 
 
 }
