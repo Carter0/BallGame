@@ -8,6 +8,7 @@ TagManager:
   - collectable
   - LevelPorter
   - Bullet
+  - Boundary
   layers:
   - Default
   - TransparentFX
