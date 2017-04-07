@@ -8,7 +8,9 @@ public class Movement : MonoBehaviour {
 	 bool canJump = false;
 	 public float speed;
      private Rigidbody rb;
-	 public int jumpForce = 0;
+	 public int jumpForceY = 0;
+	 public int jumpForceX = 0;
+	 public int jumpForceZ = 0;
 
      void Start ()
      {
@@ -20,14 +22,13 @@ public class Movement : MonoBehaviour {
 		 BallMovement ();
 		 Jumping();
 
-		 //print (canJump);
+		 print (canJump);
 		 //print (GetComponent <Rigidbody>().velocity.y);
     }
 
 	//if the ball collides with the platform, then it can jump
 	void OnCollisionEnter(Collision collision) {
 		 if (collision.gameObject.tag == "Platform") {
-			 //print ("collision has occured with platform");
 			 canJump = true;
 		 } 	 
 	}
@@ -56,8 +57,7 @@ public class Movement : MonoBehaviour {
 	//Only jump the ball if canJump = true
 	void Jumping () {
 		if (Input.GetKeyDown (KeyCode.Space) && canJump == true){
-			rb.AddForce (0, jumpForce, 0);
-			//print (jumpForce);
+			rb.AddForce (jumpForceX, jumpForceY, jumpForceZ);
 			canJump = false;
 		}	
 

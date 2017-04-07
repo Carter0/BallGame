@@ -9,7 +9,6 @@ public class BulletController : MonoBehaviour {
     public float timeToDestroy;
     public float speed = 1.0F;
     private float startTime;
-    private float journeyLength;
     private Vector3 distanceVector;
 
     private float timeAtStart;
@@ -20,10 +19,8 @@ public class BulletController : MonoBehaviour {
     public void WakeUp (Transform start, Transform end) {
         startMarker = start.position;
         endMarker = end.position;
-        journeyLength = Vector3.Distance(startMarker, endMarker);
         distanceVector = (endMarker - startMarker);
         distanceVector.Normalize ();
-
         timeAtStart = Time.time;
         
 

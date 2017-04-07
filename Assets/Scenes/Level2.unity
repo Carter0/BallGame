@@ -1164,6 +1164,21 @@ Prefab:
       propertyPath: speed
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114065946017388622, guid: ef25d9e0d922f4aefb5ab8c6ccbc0518,
+        type: 2}
+      propertyPath: jumpForceY
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 114065946017388622, guid: ef25d9e0d922f4aefb5ab8c6ccbc0518,
+        type: 2}
+      propertyPath: jumpForceX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114065946017388622, guid: ef25d9e0d922f4aefb5ab8c6ccbc0518,
+        type: 2}
+      propertyPath: jumpForceZ
+      value: -150
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef25d9e0d922f4aefb5ab8c6ccbc0518, type: 2}
   m_IsPrefabParent: 0
