@@ -57,7 +57,7 @@ public class Movement : MonoBehaviour {
 	//Only jump the ball if canJump = true
 	void Jumping () {
 		if (Input.GetKeyDown (KeyCode.Space) && canJump == true){
-			rb.AddRelativeForce (jumpForceX, jumpForceY, jumpForceZ);
+			rb.AddForce (jumpForceX, jumpForceY, jumpForceZ);
 			canJump = false;
 		}	
 

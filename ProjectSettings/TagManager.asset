@@ -9,6 +9,7 @@ TagManager:
   - LevelPorter
   - Bullet
   - Boundary
+  - RespawnB
   layers:
   - Default
   - TransparentFX
