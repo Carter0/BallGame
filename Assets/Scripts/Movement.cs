@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 
 public class Movement : MonoBehaviour {
@@ -45,11 +43,8 @@ public class Movement : MonoBehaviour {
 		float moveVertical = Input.GetAxis ("Vertical");
 		Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
 		movement = Camera.main.transform.TransformDirection(movement);
-		movement = new Vector3 (movement.x, 0.0f, movement.z); 
-		//print (movement);
-		rb.AddForce (movement * speed);
-		
-		//print(movement * speed);
+		movement = new Vector3 (movement.x, 0.0f, movement.z);
+        rb.AddForce (movement * speed, ForceMode.Acceleration);
 	}
 
 
@@ -57,8 +52,8 @@ public class Movement : MonoBehaviour {
 	//Only jump the ball if canJump = true
 	void Jumping () {
 		if (Input.GetKeyDown (KeyCode.Space) && canJump == true){
-			rb.AddForce (jumpForceX, jumpForceY, jumpForceZ);
-			canJump = false;
+            rb.AddForce (jumpForceX, jumpForceY, jumpForceZ);
+            canJump = false;
 		}	
 
 	}

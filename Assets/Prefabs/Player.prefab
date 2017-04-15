@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 439ec3a5f9cf24249ae312fc97b581e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   jumpForceY: 500
   jumpForceX: 0
   jumpForceZ: 0
@@ -128,6 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b2f9226b1dc478ca40d07e0a77785e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  respawnpoint: {fileID: 0}
 --- !u!114 &114389879718067270
 MonoBehaviour:
   m_ObjectHideFlags: 1
