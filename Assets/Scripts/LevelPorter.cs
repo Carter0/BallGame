@@ -38,7 +38,7 @@ public class LevelPorter : MonoBehaviour {
 			StopPlayerMovement ();
 		}
 
-		if (collectableCount < collectableTotal && collectableCount == 1) {
+		if (collectableCount < collectableTotal && missingCollectables == 1) {
 			levelPorterText.text = "Missing " + missingCollectables + " collectable";
 		} else if (collectableCount < collectableTotal) {
 			levelPorterText.text = "Missing " + missingCollectables + " collectables";

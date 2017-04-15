@@ -22,7 +22,7 @@ public class Collectables : MonoBehaviour {
 
     //sets the number of collectables collected and displays them on the screen
     void CollectableCount () {
-        print ("running");
+        //print ("running");
         collectableCount ++;
         collectableCountText.text = "Collectables Found: " + collectableCount;
     }
