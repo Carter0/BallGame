@@ -1,13 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class LoadScene : MonoBehaviour {
 
-    void Start()
+    public void LoadLevel()
     {
-        SceneManager.LoadScene("Level1", LoadSceneMode.Additive);
+        print("loadlevel has been called");
+        SceneManager.LoadScene ("Level1");
     }
 
 
