@@ -1,7 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelPorter : MonoBehaviour {
 
@@ -9,13 +9,20 @@ public class LevelPorter : MonoBehaviour {
 	public int collectableTotal;
 	int collectableCount = 0;
 	int missingCollectables;
+    public int sceneIndex;
+    GameObject nextLevel;
 
-	//when the player collides with the levelPorterText
-	//display the text and stop player movement
-	void OnTriggerEnter(Collider other) {
+    void Awake()
+    {
+        nextLevel = GameObject.FindGameObjectWithTag("NextLevelButton");
+        nextLevel.SetActive(false);
+    }
+
+    //when the player collides with the levelPorterText
+    //display the text and stop player movement
+    void OnTriggerEnter(Collider other) {
         if (other.gameObject.CompareTag ("LevelPorter")){
            DisplayText ();
-
         }
     }
 
@@ -36,6 +43,7 @@ public class LevelPorter : MonoBehaviour {
 		if (collectableCount == collectableTotal) {
 			levelPorterText.text = "Level Complete";
 			StopPlayerMovement ();
+            nextLevel.SetActive(true);
 		}
 
 		if (collectableCount < collectableTotal && missingCollectables == 1) {
@@ -58,6 +66,10 @@ public class LevelPorter : MonoBehaviour {
 		levelPorterText.text = "";
 
 	}
+    //load the next level
+    public void LoadNextLevel (int sceneIndex) {
+        SceneManager.LoadScene (sceneIndex);
+    }
 	
 
 }

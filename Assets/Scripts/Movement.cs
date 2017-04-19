@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour {
      {
 		 BallMovement ();
 		 Jumping();
-		 print (canJump);
+		 //print (canJump);
 
      }
 
