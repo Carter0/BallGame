@@ -1462,7 +1462,7 @@ Prefab:
     - target: {fileID: 54636192935165926, guid: ef25d9e0d922f4aefb5ab8c6ccbc0518,
         type: 2}
       propertyPath: m_Drag
-      value: 1.1
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 114065946017388622, guid: ef25d9e0d922f4aefb5ab8c6ccbc0518,
         type: 2}

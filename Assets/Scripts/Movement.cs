@@ -18,7 +18,8 @@ public class Movement : MonoBehaviour {
         
      }
 
-     void FixedUpdate ()
+     //Note to self: rb.addforce functions belong in update, not fixedupdate. 
+     void Update ()
      {
 		 BallMovement ();
 		 Jumping();
