@@ -11,6 +11,7 @@ TagManager:
   - Boundary
   - RespawnB
   - NextLevelButton
+  - RestartButton
   layers:
   - Default
   - TransparentFX
