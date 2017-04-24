@@ -1226,18 +1226,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4532669789869944, guid: 0b2d73a178198464ab0ef389845912c0, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4532669789869944, guid: 0b2d73a178198464ab0ef389845912c0, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4532669789869944, guid: 0b2d73a178198464ab0ef389845912c0, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1357155786427908, guid: 0b2d73a178198464ab0ef389845912c0, type: 2}
       propertyPath: m_Name
       value: collectable (1)
