@@ -302,16 +302,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114548820689984222, guid: 3c85ae51aa450431f8fb3d4ff4955bfb,
-        type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 481813434}
     - target: {fileID: 114823250186554914, guid: 3c85ae51aa450431f8fb3d4ff4955bfb,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 27621918}
+    - target: {fileID: 114548820689984222, guid: 3c85ae51aa450431f8fb3d4ff4955bfb,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 481813434}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3c85ae51aa450431f8fb3d4ff4955bfb, type: 2}
   m_IsPrefabParent: 0
@@ -613,16 +613,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114340964125843762, guid: ef25d9e0d922f4aefb5ab8c6ccbc0518,
-        type: 2}
-      propertyPath: respawnpoint
-      value: 
-      objectReference: {fileID: 1615569809}
     - target: {fileID: 114538297340531486, guid: ef25d9e0d922f4aefb5ab8c6ccbc0518,
         type: 2}
       propertyPath: collectableCountText
       value: 
       objectReference: {fileID: 440020887}
+    - target: {fileID: 114340964125843762, guid: ef25d9e0d922f4aefb5ab8c6ccbc0518,
+        type: 2}
+      propertyPath: respawnpoint
+      value: 
+      objectReference: {fileID: 1615569809}
     - target: {fileID: 114942998069191924, guid: ef25d9e0d922f4aefb5ab8c6ccbc0518,
         type: 2}
       propertyPath: levelPorterText

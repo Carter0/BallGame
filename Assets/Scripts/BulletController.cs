@@ -36,9 +36,10 @@ public class BulletController : MonoBehaviour {
     //If the bullet collides with anything, destroy the bullet
     void OnCollisionEnter (Collision other) {
         //print ("collision has occured");
-        if (other.gameObject.tag == "Platform") {
+        if (other.gameObject.tag == "Platform" || other.gameObject.tag == "LevelPorter") {
              gameObject.SetActive (false);
         }
+        
     }
 
     //destroys the bullet after a certain amount of time

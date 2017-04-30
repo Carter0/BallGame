@@ -18,10 +18,13 @@ public class Movement : MonoBehaviour {
         
      }
 
-     //Note to self: rb.addforce functions belong in update, not fixedupdate. 
+     void FixedUpdate () {
+		BallMovement ();
+	 }
+	 
+	 //Note to self: jumping belongs in Update, not fixedupdate.
      void Update ()
      {
-		 BallMovement ();
 		 Jumping();
 		 //print (canJump);
 
